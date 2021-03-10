@@ -1,0 +1,20 @@
+<div *ngIf="messageService.messages.length">
+
+  <!-- This code lists and clears the messages. -->  <!-- ie Display this section of html below if there IS a message -->
+
+  <h2>Messages</h2>  <!-- Red heading -->
+
+
+  <button class="clear"  (click)="messageService.clear()">Clear messages</button>
+
+  <!-- Calls clear() { this.messages = []; in the lone message servicee .ts file. } -->
+
+<!-- The "clear" is in the message .css file:  -->  <!-- .clear {  color: #333;  etc } -->
+  
+  
+  <div *ngFor="let message of messageService.messages"> {{message}} </div>  <!-- Loops thru all of the messages so far. -->
+
+
+</div>
+
+

@@ -1,0 +1,24 @@
+
+<h1 id="main-content-header">{{title}}</h1>
+
+<!-- This code is the : "app startup Home page" . Choose the Dashboard OR the Heroes component. -->
+
+<nav>
+
+  <!-- Two "buttons" : Dashboard and Heroes -->
+
+<!-- 1. Dashboard -->
+  <a routerLink="/dashboard">Dashboard</a>   <!-- { path: 'dashboard', component: DashboardComponent },  ie click & loads up the dashboard component in dashboard.component !-->
+
+<!-- 2. Heroes -->
+  <a routerLink="/heroes">Heroes</a>         <!-- { path: 'heroes', component: HeroesComponent }         ie click & loads up the heroes component in heroes.component -->
+
+</nav>
+
+<router-outlet></router-outlet> <!-- Used in conjunction with the routerLinks?--> <!-- ie depends on which "button" is clicked. -->
+
+
+<app-messages></app-messages>   <!-- Both display the Messages html. -->
+
+
+

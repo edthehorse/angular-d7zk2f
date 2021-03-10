@@ -1,0 +1,17 @@
+<h2>My Heroes</h2>
+
+<!-- This code lists ALL of the  heros. -->
+
+<ul class="heroes">
+
+  <li *ngFor="let hero of heroes"> <!-- All the heroes. -->
+
+    <a routerLink="/detail/{{hero.id}}"> <!-- allocate the link for this particular hero eg   /detail/12 -->
+   
+      <span class="badge">{{hero.id}}</span> {{hero.name}} <!-- SQUARE BADGES & nAME - for each one.-->
+
+    </a>
+  </li>
+</ul>
+
+

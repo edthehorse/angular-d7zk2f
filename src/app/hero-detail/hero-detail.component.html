@@ -1,0 +1,19 @@
+<!-- This little bit of html produces a little rectangle of details of one hero. -->
+
+<div *ngIf="hero"> <!-- If there IS a hero whose detail we wish to display.. -->
+
+  <h2>{{hero.name | uppercase}} Details</h2>  <!-- eg NARCCO Details 2-way with the input box. -->
+ 
+  <div><span>id: </span>{{hero.id}}</div> <!-- eg id: 12 -->
+
+  <div>
+
+    <label for="hero-name">Hero name: </label> <!-- Label for the text box. -->
+
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/> <!-- Input box - Two-way! -->
+
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>
+
+

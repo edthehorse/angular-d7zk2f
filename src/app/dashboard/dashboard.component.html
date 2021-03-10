@@ -1,0 +1,25 @@
+<h2>Top Heroes</h2>
+
+<!-- This code: lists a set of heroes. -->
+
+<!-- Click on one of them and we get that hero's details. -->
+
+
+<div class="heroes-menu">
+
+
+<!--  Loop thru  the heroes which have been imported using -->
+  <a *ngFor="let hero of heroes"  
+
+    routerLink="/detail/{{hero.id}}">   <!-- eg  /detail/12 (ie using the id of that particular hero.)-->
+  
+    <!-- in the app-routing-module : -->
+    <!--  const routes: Routes = [  { path: 'detail/:id', component: HeroDetailComponent }, etc    -->
+
+    {{hero.name}} */
+
+  </a>
+
+</div>
+
+
